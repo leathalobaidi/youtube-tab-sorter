@@ -1,0 +1,145 @@
+YOUTUBE TAB SORTER — CHROME WEB STORE SUBMISSION
+================================================
+
+Go to: https://chrome.google.com/webstore/devconsole
+Click "New Item" and upload: youtube-tab-sorter.zip
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STORE LISTING TAB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NAME:
+YouTube Tab Sorter
+
+
+SUMMARY:
+Sort your YouTube tabs by video duration — shortest on the left, longest on the right. One click to organize your watch queue.
+
+
+DESCRIPTION:
+YouTube Tab Sorter organizes your browser tabs by video length with a single click.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HOW IT WORKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Click the extension icon in your toolbar
+• All your YouTube video tabs instantly rearrange
+• Shortest videos move to the left, longest to the right
+• Non-YouTube tabs are moved to the right side
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERFECT FOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Clearing a video queue when you only have a few minutes
+• Watching shorter videos first before longer content
+• Organizing research or playlist tabs by length
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• One-click sorting — no configuration needed
+• Smart duration detection using multiple fallback methods
+• Works with any YouTube video tabs in your current window
+• Lightweight and fast
+• Manifest V3 compliant
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRIVACY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Does NOT collect any personal data
+• Does NOT track your browsing
+• Does NOT send data to external servers
+• Only accesses YouTube tabs to read video duration
+• Open source: https://github.com/leathalobaidi/youtube-tab-sorter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUPPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Found a bug? Have a feature request?
+https://github.com/leathalobaidi/youtube-tab-sorter/issues
+
+
+CATEGORY:
+Productivity
+
+
+LANGUAGE:
+English (United States)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRIVACY TAB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SINGLE PURPOSE DESCRIPTION:
+This extension sorts YouTube video tabs by duration, placing shorter videos on the left and longer videos on the right.
+
+
+ARE YOU USING REMOTE CODE?
+No
+
+
+DATA USE CERTIFICATIONS — CHECK ALL THREE BOXES:
+[x] I certify that the extension does not sell user data
+[x] I certify that the extension does not use or transfer user data for purposes unrelated to the item's single purpose
+[x] I certify that the extension does not use or transfer user data to determine creditworthiness or for lending purposes
+
+
+DATA COLLECTION — SELECT "NO" FOR ALL:
+• Personally identifiable information: No
+• Health information: No
+• Financial and payment information: No
+• Authentication information: No
+• Personal communications: No
+• Location: No
+• Web history: No
+• User activity: No
+• Website content: No
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERMISSION JUSTIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TABS PERMISSION:
+Required to query all tabs in the current window, identify which tabs are YouTube video pages by their URL, and reorder tabs by moving them to new index positions after sorting by video duration.
+
+
+SCRIPTING PERMISSION:
+Required to inject a content script into YouTube video pages to read the video duration from the HTML5 video element, player controls, or page metadata.
+
+
+HOST PERMISSION (youtube.com):
+Required to access YouTube video pages in order to extract video duration information for sorting. The extension only reads duration data and does not modify any page content.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONTACT / LINKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRIVACY POLICY URL:
+https://github.com/leathalobaidi/youtube-tab-sorter#-privacy
+
+
+HOMEPAGE URL:
+https://github.com/leathalobaidi/youtube-tab-sorter
+
+
+SUPPORT URL:
+https://github.com/leathalobaidi/youtube-tab-sorter/issues
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GRAPHICS TO UPLOAD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ICON (128x128) — use: icons/icon128.png
+2. SCREENSHOT (1280x800 or 640x400) — need to create
+3. SMALL PROMO TILE (440x280) — optional
+4. MARQUEE PROMO TILE (1400x560) — optional
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DONE! CLICK "SUBMIT FOR REVIEW"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

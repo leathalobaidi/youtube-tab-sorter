@@ -31,7 +31,7 @@ HOW IT WORKS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PERFECT FOR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-• Clearing a video queue when you only have a few minutes
+• Picking what to watch when you only have a few minutes
 • Watching shorter videos first before longer content
 • Organizing research or playlist tabs by length
 
@@ -96,6 +96,11 @@ DATA COLLECTION — SELECT "NO" FOR ALL:
 • Web history: No
 • User activity: No
 • Website content: No
+  (Note: the extension reads a single numeric value — the video's duration —
+   from the YouTube page DOM to perform the sort. This value is used locally and
+   in-memory only; it is never stored, collected, or transmitted anywhere. If the
+   reviewer prefers the conservative classification, this may be marked "Yes" with
+   the same "used only for the single purpose, never transferred" certification.)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -103,11 +108,11 @@ PERMISSION JUSTIFICATIONS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 TABS PERMISSION:
-Required to query all tabs in the current window, identify which tabs are YouTube video pages by their URL, and reorder tabs by moving them to new index positions after sorting by video duration.
+Required to query all tabs in the current window, read each tab's URL to identify which are YouTube video pages, and reorder tabs with chrome.tabs.move after sorting by video duration. The narrower "activeTab" permission is NOT sufficient: sorting must read the URLs of every tab in the window (not just the focused one) and must move non-active tabs, neither of which activeTab grants.
 
 
 SCRIPTING PERMISSION:
-Required to inject a content script into YouTube video pages to read the video duration from the HTML5 video element, player controls, or page metadata.
+Required to inject a one-shot function via chrome.scripting.executeScript into each YouTube video tab to read its video duration (from the HTML5 video element, the player time display, page metadata, or embedded page data). No persistent content script is bundled, and the injected function is part of the extension package — it is not fetched or executed from any remote source.
 
 
 HOST PERMISSION (youtube.com):

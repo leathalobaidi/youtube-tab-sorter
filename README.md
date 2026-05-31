@@ -11,6 +11,8 @@ A Chrome extension that sorts your YouTube video tabs by duration — shortest v
 - **One-Click Sort** — Click the toolbar icon to instantly organize all your YouTube tabs
 - **Smart Duration Detection** — Uses multiple methods to accurately detect video length
 - **Clean Organization** — YouTube videos sorted by length, other tabs moved to the right
+- **Visible Confirmation** — A toolbar badge briefly shows how many tabs were sorted (or `–` when there were none)
+- **Safe with pinned tabs** — Pinned tabs are left exactly where they are
 
 ## 🚀 Installation
 
@@ -31,7 +33,6 @@ You'll now have a folder called `youtube-tab-sorter-main` containing:
 ```
 youtube-tab-sorter-main/
 ├── background.js
-├── content.js
 ├── manifest.json
 ├── icons/
 ├── README.md
@@ -55,7 +56,7 @@ Done! You'll see the YouTube Tab Sorter icon in your Chrome toolbar.
 2. Click the **YouTube Tab Sorter** icon in your toolbar
 3. Watch your tabs rearrange — shortest video first, longest last!
 
-**Pro tip:** Great for clearing a queue of videos when you only have a few minutes.
+**Pro tip:** Great for choosing what to watch in the minutes you actually have — the short ones line up on the left.
 
 ## 🛠️ How It Works
 
@@ -82,13 +83,17 @@ This extension:
 ```
 youtube-tab-sorter/
 ├── manifest.json      # Extension configuration (Manifest V3)
-├── background.js      # Service worker - handles sorting logic
-├── content.js         # Injected into YouTube pages to read duration
+├── background.js      # Service worker — all logic: classify tabs, inject the
+│                      #   duration detector via chrome.scripting, sort, reorder
+├── tests/            # Automated Node test harness (unit + integration + chaos)
 └── icons/
     ├── icon16.png     # Toolbar icon
     ├── icon48.png     # Extension management icon
     └── icon128.png    # Chrome Web Store icon
 ```
+
+> Duration detection is **injected on demand** from `background.js` (a one-shot
+> `chrome.scripting.executeScript({ func })`); there is no bundled content script.
 
 ## 🤖 Vibe Coded
 

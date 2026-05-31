@@ -1,0 +1,9 @@
+{
+  "name": "youtube-tab-sorter-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automated test harness for the YouTube Tab Sorter extension (no human input)",
+  "scripts": {
+    "test": "node --test"
+  }
+}

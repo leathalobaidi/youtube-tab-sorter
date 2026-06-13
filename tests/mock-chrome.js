@@ -24,6 +24,7 @@ function createTabEnv(spec) {
       id: t.id,
       url: t.url,
       pinned: !!t.pinned,
+      groupId: t.groupId != null ? t.groupId : -1,
       windowId: Number(wid),
       index: i,
     }));

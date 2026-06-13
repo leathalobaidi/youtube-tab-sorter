@@ -14,6 +14,24 @@ A Chrome extension that sorts your YouTube video tabs by duration — shortest v
 - **Visible Confirmation** — A toolbar badge briefly shows how many tabs were sorted (or `–` when there were none)
 - **Safe with pinned tabs** — Pinned tabs are left exactly where they are
 
+## 🆕 What's new in 1.2
+
+- **Ad-proof duration detection** — durations are read from the page's own
+  player data, anchored to the tab's video ID. A pre-roll ad (or a sidebar
+  recommendation's data) can no longer be mistaken for the video's length —
+  this fixed a real mis-sort reproduced under concurrent tab loads.
+- **SPA-navigation safe** — stale player data left behind when you navigate
+  YouTube in the same tab is ignored unless it matches the current video.
+- **Sleeping tabs sort correctly** — tabs discarded by Chrome's memory saver
+  are measured with a lightweight anonymous fetch instead of landing at the
+  end as "unknown".
+- **Tab-group aware** — tabs sort *within* their tab group; groups are never
+  broken up or reordered.
+- **Keyboard shortcut** — `Alt+Shift+S` sorts without reaching for the mouse
+  (customisable at `chrome://extensions/shortcuts`).
+- **Right-click options** — right-click the toolbar button for
+  *Sort longest → shortest* and *Sort every window*.
+
 ## 🚀 Installation
 
 ### From Chrome Web Store (Recommended)

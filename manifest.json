@@ -1,11 +1,13 @@
 {
   "manifest_version": 3,
   "name": "YouTube Tab Sorter",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Sort YouTube tabs by video length - shortest on left, longest on right",
   "permissions": [
     "tabs",
-    "scripting"
+    "scripting",
+    "storage",
+    "contextMenus"
   ],
   "host_permissions": [
     "https://www.youtube.com/*",
@@ -18,6 +20,14 @@
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
+    }
+  },
+  "commands": {
+    "sort-tabs": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Sort YouTube tabs by video length"
     }
   },
   "background": {
